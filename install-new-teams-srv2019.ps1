@@ -94,7 +94,7 @@ if ($NetVersion -ge 4.8){
 # Download and install Windows Update kb5035849
 #
 Start-BitsTransfer -Source 'https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/03/windows10.0-kb5035849-x64_eb960a140cd0ba04dd175df1b3268295295bfefa.msu' -Destination $InstallPath -Description "Download Windows Update KB5035849"
-Write-Host "`nExtract msu file to speedup the installtion of the Windoes Update`n"
+Write-Host "`nExtract msu file to speedup the installation of the Windoes Update`n"
 Start-Process "expand.exe" -ArgumentList @("-f:* ""$InstallPath\windows10.0-kb5035849-x64_eb960a140cd0ba04dd175df1b3268295295bfefa.msu"" $InstallPath") -Wait -NoNewWindow
 
 Write-Host "`nInstall Windows Update kb5035849. This takes somae time, 15min. Please wait. If reboot is required, say No and reboot after the script finished.`n"
@@ -212,7 +212,7 @@ Start-Process "$InstallPath\ndp48-x86-x64-allos-enu.exe" -ArgumentList @("/q /no
 # Download and install Windows Update kb5035849
 #
 Start-BitsTransfer -Source 'https://catalog.s.download.windowsupdate.com/c/msdownload/update/software/secu/2024/03/windows10.0-kb5035849-x64_eb960a140cd0ba04dd175df1b3268295295bfefa.msu' -Destination $InstallPath -Description "Download Windows Update KB5035849"
-Write-Host "`nExtract msu file to speedup the installtion of the Windoes Update`n"
+Write-Host "`nExtract msu file to speedup the installation of the Windoes Update`n"
 Start-Process "expand.exe" -ArgumentList @("-f:* ""$InstallPath\windows10.0-kb5035849-x64_eb960a140cd0ba04dd175df1b3268295295bfefa.msu"" $InstallPath") -Wait -NoNewWindow
 
 Write-Host "`nInstall Windows Update kb5035849. This takes somae time, 15min. Please wait. If reboot is required, say No and reboot after the script finished.`n"
